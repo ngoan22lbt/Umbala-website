@@ -1,0 +1,386 @@
+.card-blog-1 {
+  margin: 15px 15px;
+
+  .blog {
+    border: 0.5px solid $white-color;
+    // height: 550px;
+    background-color: $white-color;
+    margin-bottom: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+    .card {
+      overflow: hidden;
+      position: relative;
+
+      .img {
+        opacity: 0.9;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover img {
+        transform: scale(1.2);
+      }
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 20px auto 10px 30px;
+    }
+    .feature {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 30px;
+      border-bottom: 0.25px solid $blur-background;
+      color: $secondary-color;
+      .calendar {
+        display: flex;
+        text-align: center;
+      }
+
+      .admin {
+        display: flex;
+        text-align: center;
+      }
+      img {
+        width: 15px;
+        height: 16px;
+        margin-top: 2px;
+      }
+      p {
+        margin: auto 5px;
+      }
+    }
+    .content {
+      margin: 15px 30px;
+      .comment {
+        display: flex;
+        justify-content: space-between;
+        a {
+          color: $red-color;
+        }
+        .no-comment {
+          display: flex;
+          img {
+            margin-right: 5px;
+            width: 15px;
+            height: 16px;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+  .note {
+    background-color: $time-color;
+    
+    padding: 25px;
+    .top {
+      display: grid;
+      grid-template-columns: 15% 85%;
+
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .feature {
+      display: flex;
+      justify-content: space-between;
+      .calendar {
+        display: flex;
+        img {
+          width: 15px;
+          height: 16px;
+          margin-right: 7px;
+          margin-top: 3px;
+        }
+      }
+
+      p {
+        color: $secondary-color;
+      }
+
+      .comment {
+        display: flex;
+        img {
+          margin-right: 7px;
+          margin-top: 3px;
+          width: 15px;
+          height: 16px;
+        }
+      }
+    }
+  }
+  .card-2 {
+    h6 {
+      font-weight: 700;
+      padding-bottom: 12px;
+      border-bottom: 0.5px solid #ccc;
+    }
+    .categories {
+      margin: 3rem auto;
+
+      .content {
+        line-height: 2.3rem;
+        font-size: 15px;
+        color: $secondary-color;
+      }
+    }
+    .recent-posts {
+      
+      p {
+        font-size: 14px;
+      }
+      .img {
+        overflow: hidden;
+
+        img {
+          width: 60%;
+          transition: transform 0.5s ease;
+        }
+        &:hover img {
+  
+          transform: scale(1.1);
+        }
+      }
+      h7 {
+        font-weight: 500;
+      }
+      .calendar {
+        display: flex;
+        margin-top: 5px;
+        img {
+          margin-right: 7px;
+          margin-top: 2px;
+          width: 15px;
+          height: 16px;
+        }
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        img {
+          margin-right: 7px;
+          margin-top: 2px;
+          width: 15px;
+          height: 16px;
+        }
+        .admin {
+          display: flex;
+        }
+        .comment {
+          display: flex;
+        }
+        p {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@include md-screen {
+  .card-blog-1 {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 1.5rem 4rem;
+    .card-1 {
+      margin-right: 5%;
+    }
+  }
+  .note {
+    background-color: $time-color;
+   
+    .top {
+      display: grid;
+      grid-template-columns: 15% 85%;
+
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .feature {
+      display: flex;
+      justify-content: space-between;
+      .calendar {
+        display: flex;
+        img {
+          width: 15px;
+          height: 16px;
+          margin-right: 7px;
+          margin-top: 3px;
+        }
+      }
+
+      p {
+        color: $secondary-color;
+      }
+
+      .comment {
+        display: flex;
+        img {
+          margin-right: 7px;
+          margin-top: 3px;
+          width: 15px;
+          height: 16px;
+        }
+      }
+    }
+    .recent-posts {
+      p {
+        font-size: 15px;
+      }
+      .img {
+        overflow: hidden;
+
+        img {
+          width: 60%;
+          transition: transform 0.5s ease;
+        }
+        &:hover img {
+          // filter: brightness(100%);
+          // transform: scale(1.3);
+          transform: scale(1.1);
+        }
+      }
+      h7 {
+        font-weight: 500;
+        margin-top: 30px;
+      }
+      .calendar {
+        margin-top: 30px;
+        display: flex;
+        img {
+          margin-right: 7px;
+          margin-top: 2px;
+          width: 15px;
+          height: 16px;
+        }
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        img {
+          margin-right: 7px;
+          margin-top: 2px;
+          width: 15px;
+          height: 16px;
+        }
+        .admin {
+          display: flex;
+        }
+        .comment {
+          display: flex;
+        }
+        p {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@include lg-screen {
+  .card-blog-1 {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 2rem 7rem;
+    .card-1 {
+      margin-right: 5%;
+    }
+  }
+  .note {
+    background-color: $time-color;
+   
+    .top {
+      display: grid;
+      grid-template-columns: 15% 85%;
+
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .feature {
+      display: flex;
+      justify-content: space-between;
+      .calendar {
+        display: flex;
+        img {
+          width: 15px;
+          height: 16px;
+          margin-right: 7px;
+          margin-top: 3px;
+        }
+      }
+
+      p {
+        color: $secondary-color;
+      }
+
+      .comment {
+        display: flex;
+        img {
+          margin-right: 7px;
+          margin-top: 3px;
+          width: 15px;
+          height: 16px;
+        }
+      }
+    }
+    .recent-posts {
+      p {
+        font-size: 15px;
+      }
+      .img {
+        overflow: hidden;
+
+        img {
+          width: 60%;
+          transition: transform 0.5s ease;
+        }
+        &:hover img {
+          // filter: brightness(100%);
+          // transform: scale(1.3);
+          transform: scale(1.1);
+        }
+      }
+      h7 {
+        font-weight: 500;
+        margin-top: 30px;
+      }
+      .calendar {
+        margin-top: 30px;
+        display: flex;
+        img {
+          margin-right: 7px;
+          margin-top: 2px;
+          width: 15px;
+          height: 16px;
+        }
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        img {
+          margin-right: 7px;
+          margin-top: 2px;
+          width: 15px;
+          height: 16px;
+        }
+        .admin {
+          display: flex;
+        }
+        .comment {
+          display: flex;
+        }
+        p {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+

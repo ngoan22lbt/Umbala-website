@@ -1,0 +1,817 @@
+.content-heading {
+  margin-top: 4.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  .line-1 {
+    font-size: 17px;
+    color: $red-color;
+  }
+  .line-2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .line-3 {
+    color: $primary-color;
+  }
+}
+.card-content {
+  margin-top: 2.5rem;
+  margin: 0px 15px;
+  .card {
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      opacity: 0.9;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover img {
+      transform: scale(1.2);
+    }
+
+    .card-button {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid $white-color;
+
+      background-color: $white-color;
+      padding: 10px 20px;
+      font-size: large;
+      color: $primary-color;
+      font-weight: 550;
+    }
+  }
+}
+
+.deal {
+  background-color: $white-color;
+  height: 750px;
+  position: relative;
+  text-align: center;
+  .content-heading {
+    padding-top: 4rem;
+    p {
+      margin-top: 2rem;
+      font-size: 15px;
+      text-align: center;
+      padding: 0 7.5rem;
+    }
+  }
+
+  .time {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+    .secs {
+      grid-column-start: 2;
+    }
+    div {
+      padding: 5px 0px;
+      background-color: $primary-color;
+
+      text-align: center;
+      line-height: normal;
+      color: $white-color;
+      margin: 10px;
+
+      span {
+        font-weight: 900;
+        font-size: 40px;
+      }
+      div {
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0 auto 13px auto;
+      }
+    }
+  }
+  .button {
+    border: 1px solid $secondary-color;
+    padding: 10px 20px;
+    margin-top: 2rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    font-weight: 500;
+  }
+}
+.collections {
+  text-align: center;
+  .collection {
+    padding: 5px;
+  }
+  .collection-2 {
+    display: none;
+  }
+
+  .collection-3 {
+    display: none;
+  }
+
+  .collection-4 {
+    display: none;
+  }
+
+  .product {
+    background-color: $white-color;
+    height: 135vw;
+    width: 95%;
+    margin: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+    .img {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 90%;
+        margin: auto;
+        display: block;
+        
+        filter: brightness(0.9);
+      }
+      .hover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+
+      button {
+        position: absolute;
+        background: $red-color;
+        bottom: -3rem;
+        color: $white-color;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        border: 0.5px solid $red-color;
+        transition: 0.4s;
+      }
+      &:hover button {
+        bottom: 4rem;
+      }
+    }
+
+    .img:hover img.hover {
+      opacity: 1;
+    }
+    .content {
+      line-height: normal;
+      margin-top: 1.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      h4 {
+        margin: 5px 0;
+      }
+
+      p {
+        margin: 0;
+        color: $secondary-color;
+      }
+      div {
+        color: $red-color;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.card-blog {
+  margin: 15px 15px;
+
+  .blog {
+    border: 0.5px solid $white-color;
+    // height: 550px;
+    background-color: rgba(241, 241, 241, 0.937254902);
+  }
+
+  .blog-2 {
+    display: none;
+  }
+
+  .blog-3 {
+    display: none;
+  }
+
+  .card {
+    overflow: hidden;
+    position: relative;
+
+    .img {
+      opacity: 0.9;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover img {
+      transform: scale(1.2);
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px auto 20px 30px;
+  }
+  .feature {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    border-bottom: 1px solid $blur-background;
+    .calendar {
+      width: 100%;
+      display: flex;
+      text-align: center;
+    }
+
+    .comment {
+      width: 100%;
+      display: flex;
+      text-align: center;
+    }
+    img {
+      width: 16px;
+      height: 18px;
+      margin-top: 3px;
+    }
+    p {
+      margin-left: 5px;
+    }
+  }
+  .content {
+    margin: 15px 30px;
+    a {
+      color: $red-color;
+    }
+  }
+}
+
+@include md-screen {
+  .card-content {
+    margin: 0px 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    // grid-auto-rows: minmax(150px, auto);
+    gap: 18px;
+
+    .card-1 {
+      grid-row: span 1;
+    }
+    .card-2 {
+      grid-row: span 2;
+    }
+    .card-3 {
+      grid-row: span 2;
+    }
+    .card-4 {
+      grid-row: span 1;
+    }
+
+    .card {
+      margin-bottom: 30px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        overflow-block: 2rem;
+        opacity: 0.9;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover img {
+        transform: scale(1.2);
+      }
+
+      .card-button {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $white-color;
+
+        background-color: $white-color;
+        padding: 10px 20px;
+        font-size: large;
+        color: $primary-color;
+        font-weight: 550;
+      }
+    }
+  }
+
+  .deal {
+    background-color: $time-color;
+    height: 680px;
+    position: relative;
+    text-align: center;
+    .content-heading {
+      padding-top: 4rem;
+      p {
+        margin-top: 2rem;
+        font-size: 15px;
+        text-align: center;
+        padding: 0 7.5rem;
+      }
+    }
+
+    .time {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      margin-top: 4rem;
+      width: 100%;
+
+      div {
+        padding: 5px 0px;
+        background-color: $primary-color;
+        width: 100px;
+        text-align: center;
+        line-height: normal;
+        color: $white-color;
+        flex: 0 0 110px;
+
+        span {
+          font-weight: 900;
+          font-size: 40px;
+        }
+        div {
+          font-size: 15px;
+          font-weight: 500;
+          padding: 0;
+          margin: 0 auto 13px auto;
+        }
+      }
+    }
+    .button {
+      border: 1px solid $secondary-color;
+      padding: 10px 20px;
+      margin-top: 2rem;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+        rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+        rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+        rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      font-weight: 500;
+    }
+  }
+  .collections {
+   
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    .collection {
+      padding: 2px;
+    }
+
+    .collection-2 {
+      display: block;
+    }
+
+    .collection-3 {
+      display: none;
+    } 
+
+    .collection-4 {
+      display: none;
+    } 
+
+
+
+
+    .product {
+      background-color: $white-color;
+      height: 80vw;
+      width: 95%;
+      margin: 15px;
+      box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+      .img {
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 95%;
+          margin: auto;
+          display: block;
+          
+          filter: brightness(0.9);
+        }
+        .hover {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          object-fit: contain;
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+
+        button {
+          position: absolute;
+          background: $red-color;
+          bottom: -3rem;
+          color: $white-color;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 2.5px 5px;
+          border: 0.5px solid $red-color;
+          transition: 0.3s;
+        }
+        &:hover button {
+          bottom: 2rem;
+        }
+      }
+
+      .product-2 {
+        display: none;
+      }
+
+      .img:hover img.hover {
+        opacity: 1;
+      }
+      .content {
+        line-height: normal;
+        margin-top: 1.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        h4 {
+          margin: 5px 0;
+        }
+
+        p {
+          margin: 0;
+          color: $secondary-color;
+        }
+        div {
+          color: $red-color;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .card-blog {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    .blog {
+      margin: 5px;
+      background-color: $white-color;
+      border: 1px solid rgb(225, 224, 224);
+      .card {
+        position: relative;
+      }
+
+      .img {
+        opacity: 0.9;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover img {
+        transform: scale(1.2);
+      }
+    }
+
+    .blog-2 {
+      display: block;
+    }
+
+    .blog-3 {
+      display: none;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 20px auto 15px 20px;
+    }
+    .feature {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 20px;
+      border-bottom: 1px solid $blur-background;
+      .calendar {
+        width: 100%;
+        display: flex;
+        text-align: center;
+      }
+
+      .comment {
+        width: 100%;
+        display: flex;
+        text-align: center;
+      }
+      img {
+        width: 14px;
+        height: 16px;
+        margin-top: 1px;
+      }
+      p {
+        // margin-left: 1px;
+        font-size: 13px;
+      }
+    }
+    .content {
+      margin: 15px 20px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      a {
+        color: $red-color;
+      }
+    }
+  }
+}
+
+@include lg-screen{
+  .card-content {
+    margin: 0 6rem;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    gap: 18px;
+
+    .card-1 {
+      grid-row: span 1;
+    }
+    .card-2 {
+      grid-row: span 2;
+    }
+    .card-3 {
+      grid-row: span 2;
+    }
+    .card-4 {
+      grid-row: span 1;
+    }
+
+    .card {
+      
+      overflow: hidden;
+      position: relative;
+
+      img {
+        height: 100%;
+        overflow-block: 2rem;
+        opacity: 0.9;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover img {
+        transform: scale(1.2);
+      }
+
+      .card-button {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $white-color;
+
+        background-color: $white-color;
+        padding: 5px 10px;
+        width: fit-content;
+        font-size: medium;
+        color: $primary-color;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .deal {
+    background-color: $time-color;
+    height: 90vh;
+    position: relative;
+    text-align: center;
+    .content-heading {
+      padding-top: 4rem;
+      p {
+        margin-top: 2rem;
+        font-size: 15px;
+        text-align: center;
+        padding: 0 7.5rem;
+      }
+    }
+
+    .time {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      margin-top: 4rem;
+      width: 100%;
+
+      div {
+        padding: 5px 0px;
+        background-color: $primary-color;
+        width: 100px;
+        text-align: center;
+        line-height: normal;
+        color: $white-color;
+        flex: 0 0 110px;
+
+        span {
+          font-weight: 900;
+          font-size: 40px;
+        }
+        div {
+          font-size: 15px;
+          font-weight: 500;
+          padding: 0;
+          margin: 0 auto 13px auto;
+        }
+      }
+    }
+    .button {
+      border: 1px solid $secondary-color;
+      padding: 10px 20px;
+      margin-top: 2rem;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+        rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+        rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+        rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      font-weight: 500;
+    }
+  }
+  .collections {
+    margin: 0 6rem;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    .collection {
+      padding: 2px;
+    }
+
+    .collection-2 {
+      display: block;
+    }
+
+    .collection-3 {
+      display: block;
+    } 
+
+    .collection-4 {
+      display: block;
+    } 
+
+    .product {
+      // background-color: $white-color;
+      height: 38vw;
+      width: 95%;
+      margin: 15px;
+      box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+      .img {
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 95%;
+          margin: auto;
+          display: block;
+          filter: brightness(0.9);
+        }
+        .hover {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          object-fit: contain;
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+
+        button {
+          position: absolute;
+          background: $red-color;
+          bottom: -4rem;
+          color: $white-color;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 3px 6px;
+          border: 0.5px solid $red-color;
+          transition: 0.3s;
+          font-size: medium;
+          
+        }
+        &:hover button {
+          bottom: 2rem;
+        }
+      }
+
+      .product-2 {
+        display: none;
+      }
+
+      .img:hover img.hover {
+        opacity: 1;
+      }
+      .content {
+        line-height: normal;
+        margin-top: 1.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        h4 {
+          margin: 5px 0;
+          font-size: 16px;
+        }
+
+        p {
+          margin: 0;
+          color: $secondary-color;
+        }
+        div {
+          color: $red-color;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .card-blog {
+    margin: 0 6rem;
+    justify-content: center;
+    display: flex;
+    .blog {
+      margin: 5px;
+      background-color: $white-color;
+      border: 1px solid rgb(225, 224, 224);
+      .card {
+        position: relative;
+      }
+
+      .img {
+        opacity: 0.9;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover img {
+        transform: scale(1.2);
+      }
+    }
+
+    .blog-2 {
+      display: block;
+    }
+
+    .blog-3 {
+      display: block;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 20px auto 15px 20px;
+    }
+    .feature {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 20px;
+      border-bottom: 1px solid $blur-background;
+      .calendar {
+        width: 100%;
+        display: flex;
+        text-align: center;
+      }
+
+      .comment {
+        width: 100%;
+        display: flex;
+        text-align: center;
+      }
+      img {
+        width: 14px;
+        height: 16px;
+        margin-top: 1px;
+      }
+      p {
+        // margin-left: 1px;
+        font-size: 12px;
+      }
+    }
+    .content {
+      margin: 15px 20px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      a {
+        color: $red-color;
+      }
+    }
+  }
+}
